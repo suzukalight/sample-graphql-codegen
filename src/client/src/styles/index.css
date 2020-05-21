@@ -1,0 +1,44 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+* {
+  font-size: 18px;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article ul {
+  display: block;
+  list-style-type: disc;
+  margin: 1em 0;
+  padding-left: 2.25em;
+}
+
+article li {
+  display: list-item;
+  text-align: match-parent;
+}
+
+/* purgecss start ignore */
+article p {
+  margin: 1em 0;
+}
+/* purgecss end ignore */
