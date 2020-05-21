@@ -1,0 +1,59 @@
+{
+  "name": "sample-graphql-codegen",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "suzukalight <mail@mkubara.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "src/*"
+    ],
+    "nohoist": [
+      "**/react-scripts",
+      "**/react-scripts/**",
+      "**/@zeit/**",
+      "**/@generated",
+      "**/@generated/**"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-flowtype": "^5.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.4",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/{client,server}/src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint": "yarn lint:client && yarn lint:server",
+    "lint:client": "yarn workspace client lint",
+    "lint:server": "yarn workspace server lint",
+    "dev:client": "yarn workspace client dev",
+    "dev:server": "yarn workspace server dev",
+    "build:client": "yarn workspace client build",
+    "build:server": "yarn workspace server build",
+    "start:client": "yarn workspace client start",
+    "start:server": "yarn workspace server start",
+    "db:migrate": "yarn workspace server db:migrate",
+    "db:seed:all": "yarn workspace server db:seed:all"
+  }
+}
