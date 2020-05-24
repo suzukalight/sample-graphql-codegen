@@ -54,6 +54,7 @@
     "start:client": "yarn workspace client start",
     "start:server": "yarn workspace server start",
     "db:migrate": "yarn workspace server db:migrate",
-    "db:seed:all": "yarn workspace server db:seed:all"
+    "db:seed:all": "yarn workspace server db:seed:all",
+    "codegen": "yarn workspace client codegen"
   }
 }
