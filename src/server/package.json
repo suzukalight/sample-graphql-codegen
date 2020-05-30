@@ -43,11 +43,11 @@
     "typescript": "^3.7.3"
   },
   "scripts": {
-    "dev": "ts-node-dev ./src/index.ts",
+    "dev": "ts-node-dev ./src/infrastructure/express/index.ts",
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts ./src/",
     "test": "jest",
     "build": "tsc",
-    "start-server": "node ./dist/index.js",
+    "start-server": "node ./dist/infrastructure/express/index.js",
     "sequelize-cli": "npx sequelize-cli",
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:seed:all": "npx sequelize-cli db:seed:all",

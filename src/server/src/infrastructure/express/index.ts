@@ -7,11 +7,11 @@ import DataLoader from 'dataloader';
 
 require('dotenv').config();
 
-import schema from './application/schema';
-import resolvers from './application/resolvers';
-import models, { sequelize } from './domain/models';
-import User from './domain/models/user';
-import loaders from './infrastructure/dataloader/loaders';
+import schema from '../../application/schema';
+import resolvers from '../../application/resolvers';
+import models, { sequelize } from '../../domain/models';
+import User from '../../domain/models/user';
+import loaders from '../../infrastructure/dataloader/loaders';
 
 const app = express();
 
