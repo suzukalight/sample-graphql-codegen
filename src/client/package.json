@@ -13,6 +13,12 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@graphql-codegen/cli": "^1.14.0",
+    "@graphql-codegen/fragment-matcher": "^1.14.0",
+    "@graphql-codegen/typescript": "^1.14.0",
+    "@graphql-codegen/typescript-document-nodes": "^1.14.0",
+    "@graphql-codegen/typescript-graphql-files-modules": "^1.14.0",
+    "@graphql-codegen/typescript-operations": "^1.14.0",
     "@types/node": "^13.13.2",
     "@types/react": "^16.9.34",
     "autoprefixer": "^9.7.6",
@@ -24,6 +30,7 @@
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts ./src/",
     "dev": "next dev -p 7777",
     "build": "next build",
-    "start": "next start -p 7890"
+    "start": "next start -p 7890",
+    "codegen": "graphql-codegen --config codegen.yml"
   }
 }
