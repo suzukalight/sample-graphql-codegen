@@ -5,7 +5,7 @@
   "author": "suzukalight <mail@mkubara.com>",
   "license": "MIT",
   "dependencies": {
-    "apollo-server": "^2.9.13",
+    "apollo-server": "^2.25.4",
     "apollo-server-express": "^2.9.13",
     "bcrypt": "^3.0.7",
     "cors": "^2.8.5",
